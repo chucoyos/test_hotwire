@@ -10,13 +10,14 @@
       </ul>
     </div>
   <% end %>
+  <div class="container bg-dark text-white>
+    <div class="field">
+      <%= form.label "Servicio" %>
+      <%= form.text_field :content %>
+    </div>
 
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_field :content %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
+    <div class="actions">
+      <%= form.submit "Crear Sevicio", class: 'btn btn-primary' %>
+    </div>
   </div>
 <% end %>

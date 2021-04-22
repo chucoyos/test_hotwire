@@ -1,9 +1,9 @@
 <%= turbo_frame_tag dom_id(tweet) do %>
     <div class="card m-4">
-      <div class="card-body">
+      <div class="card-body bg-danger">
         <%= tweet.content %>
       </div>
-      <div class="card-footer bg-transparent border-success">
+      <div class="card-footer bg-dark border-success">
         <%= link_to 'Show', tweet, class: 'btn btn-sm btn-primary text-white' %>
         <%= link_to 'Edit', edit_tweet_path(tweet), class: 'btn btn-sm btn-warning text-white', remote: true %>
         <%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Quieres Eliminarlo?' }, class: 'btn btn-sm btn-danger text-white' %>
